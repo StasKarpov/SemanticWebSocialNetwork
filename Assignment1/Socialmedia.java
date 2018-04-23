@@ -90,7 +90,7 @@ public class Socialmedia extends Object {
         // Output query results
         ResultSetFormatter.out(System.out, results, query);
 
-        ////####################################sub-task 3
+        ////####################################sub-task 3(with error)
         //retrieve all URIs of images with a minimum of two likes,
         // but there should not be any persons who liked and comments any image of the list
 
