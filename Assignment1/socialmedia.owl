@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:SK_MST_ontology="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ma-ont="http://www.w3.org/ns/ma-ont#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology">
+        <owl:imports rdf:resource="http://www.w3.org/ns/ma-ont"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#commented -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#commented">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#comments -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#comments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#follows">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#friendWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#friendWith">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#inFamilyWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#inFamilyWith">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#liked -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#liked">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#likes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#likes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#mediaSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#mediaSource">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#shared -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#shared">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#taged -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#taged">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#tags -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#tags">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#uploads -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#uploads">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#author -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#author">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#dateOfRelease -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#dateOfRelease">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#format -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#format">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#link">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#locationOfCreation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#locationOfCreation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#profileImage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#profileImage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#socialMediaName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#socialMediaName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#tagName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#tagName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Tag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#textOfComment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#textOfComment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#textOfDocument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#textOfDocument">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#duration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Audio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#frameHeight -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#frameHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#frameRate -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#frameRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#frameSizeUnit -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#frameSizeUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#frameWidth -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#frameWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#title -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#title">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#UserActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#UserActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Tag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#UserActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#UserActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#UserActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment"/>
+        <commented rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video1"/>
+        <textOfComment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Great!</textOfComment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document"/>
+        <format>txt</format>
+        <textOfDocument rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Franz Kafka (3 July 1883 – 3 June 1924) was a German-language writer of novels and short stories, regarded by critics as one of the most influential authors of the 20th century. Kafka strongly influenced genres such as existentialism. His works, such as &quot;Die Verwandlung&quot; (&quot;The Metamorphosis&quot;), Der Process (The Trial), and Das Schloss (The Castle), are filled with the themes and archetypes of alienation, physical and psychological brutality, parent–child conflict, characters on a terrifying quest, and mystical transformations.
+Kafka was born into a middle-class, German-speaking Jewish family in Prague, then part of the Austro-Hungarian Empire, and trained as a lawyer. After completing his legal education, Kafka obtained employment with an insurance company. He began to write short stories in his spare time, and for the rest of his life complained about the little time he had to devote to what he came to regard as his calling. He also regretted having to devote so much attention to his Brotberuf (&quot;day job&quot;, literally &quot;bread job&quot;). Kafka preferred to communicate by letter; he wrote hundreds of letters to family and close female friends, including his father, his fiancée Felice Bauer, and his youngest sister Ottla. He had a complicated and troubled relationship with his father that had a major impact on his writing, and he was conflicted over his Jewishness and felt it had little to do with him, although it debatably influenced his writing.
+Only a few of Kafka&apos;s works were published during his lifetime: the story collections Betrachtung (Contemplation) and Ein Landarzt (A Country Doctor), and individual stories (such as &quot;Die Verwandlung&quot;) in literary magazines. He prepared the story collection Ein Hungerkünstler (A Hunger Artist) for print, but it was not published until after his death. Kafka&apos;s unfinished works, including his novels Der Process, Das Schloss and Amerika (also known as Der Verschollene, The Man Who Disappeared), were published posthumously, mostly by his friend Max Brod, who ignored Kafka&apos;s wish to have the manuscripts destroyed. Albert Camus and Jean-Paul Sartre are among the writers influenced by Kafka&apos;s work; the term Kafkaesque has entered the English language to describe surreal situations like those in his writing.</textOfDocument>
+        <ma-ont:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Franz Kafka</ma-ont:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Flickr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Flickr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+        <socialMediaName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Flickr</socialMediaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like"/>
+        <liked rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like"/>
+        <liked rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like"/>
+        <liked rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Photo1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like"/>
+        <liked rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Photo1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Photo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Photo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Image"/>
+        <mediaSource rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Flickr"/>
+        <link rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.flickr.com/photos/library_of_congress/4733201712/meta/</link>
+        <ma-ont:creationDate rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1914</ma-ont:creationDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User3"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#me"/>
+        <likes rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like1"/>
+        <uploads rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Photo1"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</id>
+        <location rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Vienna</location>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</foaf:age>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">James Ricker</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User2"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#me"/>
+        <likes rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like2"/>
+        <likes rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like4"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</id>
+        <location rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Berlin</location>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</foaf:age>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Rick Shoulders</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User5"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User6"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#me"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</id>
+        <location rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">New York</location>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</foaf:age>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</foaf:gender>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jinna Waters</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User4"/>
+        <uploads rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video1"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</id>
+        <location rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">London</location>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</foaf:age>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</foaf:gender>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maria Rain</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User4"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</id>
+        <location rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Barcelona</location>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</foaf:age>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</foaf:gender>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Liza Chaikowski</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Video"/>
+        <mediaSource rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#YouTube"/>
+        <link rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.youtube.com/watch?v=zpJ9r-BmvYY</link>
+        <ma-ont:duration rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">5:32</ma-ont:duration>
+        <ma-ont:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Franz Kafka Mini Documentary</ma-ont:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Wikipedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Wikipedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+        <socialMediaName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wikipedia</socialMediaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#YouTube -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#YouTube">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#SocialMedia"/>
+        <socialMediaName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">YouTube</socialMediaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User"/>
+        <comments rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Comment1"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User2"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User3"/>
+        <friendWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#User4"/>
+        <likes rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Like3"/>
+        <uploads rdf:resource="http://www.semanticweb.org/pc/ontologies/2018/3/SK_MST_ontology#Document1"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</id>
+        <location rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kiev</location>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</foaf:age>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Stanislav Karpov</foaf:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
