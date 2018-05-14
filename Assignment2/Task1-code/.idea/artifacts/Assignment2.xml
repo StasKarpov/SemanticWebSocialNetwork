@@ -1,0 +1,58 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Assignment2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Assignment2</output-path>
+    <root id="archive" name="Assignment2.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Assignment2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JAX-RS" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs:3.1.4.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.1.Beta1" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs-services:3.1.4.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.5" />
+          <element id="library" level="project" name="Maven: net.jcip:jcip-annotations:1.0" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-client:3.1.4.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-html:3.5.1.Final" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-tdb:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-arq:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-core:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-iri:3.7.0" />
+          <element id="library" level="project" name="Maven: xerces:xercesImpl:2.11.0" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.4.01" />
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.4" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-base:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-csv:1.5" />
+          <element id="library" level="project" name="Maven: com.github.andrewoma.dexx:collection:0.7" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-shaded-guava:3.7.0" />
+          <element id="library" level="project" name="Maven: com.github.jsonld-java:jsonld-java:0.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-cache:4.5.3" />
+          <element id="library" level="project" name="Maven: org.apache.thrift:libthrift:0.10.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-tdb2:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-dboe-trans-data:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-dboe-transaction:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-dboe-base:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-dboe-index:3.7.0" />
+          <element id="library" level="project" name="Maven: org.apache.jena:jena-rdfconnection:3.7.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Assignment2/web/Web" />
+      <element id="javaee-facet-resources" facet="Assignment2/web/Web" />
+    </root>
+  </artifact>
+</component>
